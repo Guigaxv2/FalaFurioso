@@ -11,19 +11,12 @@ Bot feito por fã para fãs do time de CS:GO da FURIA!
 - `/curiosidade` – Curiosidades do time
 - `/quiz` – Pergunta rápida sobre o time
 
-## Como rodar
+## O que faz ?
 
-1. Instale o Python 3.10+
-2. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
+Esse foi um chat produzido por Guilherme Bergamini Ikeno (Guigaxv2) para ajudar os fãs da Furia 
+para que possam saber mais sobre o elenco atual do nosso Time de CS e para saber curiosidades e proximos jogos do nosso time 
 
-3. No arquivo `bot.py`, cole o **seu token do BotFather**
-4. Rode o bot:
-```bash
-python bot.py
-```
 
-O bot vai funcionar no Telegram! Interaja com ele direto pelo app.
+
+
 

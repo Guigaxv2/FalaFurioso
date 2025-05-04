@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import random
 
-TOKEN = 'COLE_SEU_TOKEN_AQUI'  # <-- Cole aqui seu token do BotFather
+TOKEN =  123456789:ABCDefGhIJKlmNoPQRstuVWXyz123456789
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Salve, fã da FURIA! Use /ajuda para ver os comandos!")

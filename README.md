@@ -1,4 +1,4 @@
-FURIA ChatBot – Telegram
+## FURIA ChatBot – Telegram
 
 Bot feito por fã para fãs do time de CS:GO da FURIA!
 

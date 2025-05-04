@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import random
 
-TOKEN =  123456789:ABCDefGhIJKlmNoPQRstuVWXyz123456789
+TOKEN = '7480020492:AAEYoN4Yhb0uvjoVSAU2JoUuynYfjBxGyNw'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Salve, fã da FURIA! Use /ajuda para ver os comandos!")
@@ -44,20 +44,15 @@ async def curiosidade(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Quiz: Quem é o IGL da FURIA? Responda aí!")
 
-async def main():
-    app = ApplicationBuilder().token(TOKEN).build()
+app = ApplicationBuilder().token(TOKEN).build()
 
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("ajuda", ajuda))
-    app.add_handler(CommandHandler("noticias", noticias))
-    app.add_handler(CommandHandler("elenco", elenco))
-    app.add_handler(CommandHandler("proximo_jogo", proximo_jogo))
-    app.add_handler(CommandHandler("curiosidade", curiosidade))
-    app.add_handler(CommandHandler("quiz", quiz))
+app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("ajuda", ajuda))
+app.add_handler(CommandHandler("noticias", noticias))
+app.add_handler(CommandHandler("elenco", elenco))
+app.add_handler(CommandHandler("proximo_jogo", proximo_jogo))
+app.add_handler(CommandHandler("curiosidade", curiosidade))
+app.add_handler(CommandHandler("quiz", quiz))
 
-    print("Bot da FURIA ativo!")
-    await app.run_polling()
-
-if __name__ == '__main__':
-    import asyncio
-    asyncio.run(main())
+print("Bot da FURIA ativo!")
+app.run_polling()

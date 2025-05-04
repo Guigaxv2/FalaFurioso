@@ -1,17 +1,28 @@
-# FalaFURIA – Chat da Torcida 🔥
+# FURIA ChatBot – Telegram
 
-Este é um chatbot criado por Guilherme Ikeno para torcedores da FURIA Esports!  
-Você pode conversar com o bot, pedir o próximo jogo, escalação, curiosidades e mais.
+Bot feito por fã para fãs do time de CS:GO da FURIA!
 
-## Comandos
+## Comandos:
+- `/start` – Inicia o bot
+- `/ajuda` – Lista comandos
+- `/noticias` – Últimas notícias da FURIA
+- `/elenco` – Jogadores atuais
+- `/proximo_jogo` – Quando é o próximo jogo
+- `/curiosidade` – Curiosidades do time
+- `/quiz` – Pergunta rápida sobre o time
 
-- `oi`: saudação
-- `jogo`: próximo confronto
-- `time`: escalação atual
-- `historia`: sobre a FURIA
-- `curiosidade`: fatos legais
-- `meme`: piadas da torcida
+## Como rodar
 
-## Autor
+1. Instale o Python 3.10+
+2. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
 
-Desenvolvido por Guilherme-Bergamini-Ikeno(https://github.com/Guigaxv2)
+3. No arquivo `bot.py`, cole o **seu token do BotFather**
+4. Rode o bot:
+```bash
+python bot.py
+```
+
+O bot vai funcionar no Telegram! Interaja com ele direto pelo app.
